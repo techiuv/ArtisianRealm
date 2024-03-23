@@ -1,0 +1,118 @@
+/* css variables */
+
+:root {
+    --bg:#15161b;
+    --main-font:"Gilda Display", serif;
+    --light-font:"Poppins", sans-serif;
+    --light-color:#d7d7d7;   
+}
+
+/* css reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body {
+    height: 100%;
+    width: 100%;    
+}
+
+body {
+    background: var(--bg);
+    color: white;
+}   
+
+nav {
+    display: flex;
+    justify-content: space-around;     
+    align-items: center;    
+    font-size: 2vw;
+    min-height: 8vh;
+    width: 100vw;
+    padding: 1vh 2vw;
+    font-family: var(--main-font);
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: white;
+    background: transparent;
+}
+
+nav p {
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 1vw;
+}
+
+nav ul li a {
+    color: var(--light-color);
+    text-decoration: none;
+    font-size: 1vw;
+    font-family: var(--light-font);    
+    letter-spacing: 0;
+    font-weight: 400;
+}
+
+nav ul li a:hover{color: white;}
+
+#page1 p{
+    font-size: 2vw;
+    color: white;
+    font-family: var(--main-font);
+    margin: 2vh 5vw;
+    width: 90%;    
+    font-weight: 400;
+    text-align: center;
+}
+
+#page1 div p{
+    text-align: left;
+    margin: 5vh 5vw;
+}
+
+#head{
+    text-align: left;
+    font-family: var(--main-font);
+    font-size: 4vw;
+    position: relative;
+    width: 100%;
+    font-weight: 500;
+}
+
+#head::before{
+    height: 1px;
+    width: 50%;
+    background: white;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    content: "";    
+}
+
+@media screen and (max-width:980px){
+    nav{
+        font-size: 3.5vw;
+    }
+    
+    #page1 p {
+        font-size: 3vw;        
+    }
+}
+
+
+@media screen and (max-width:760px){
+    nav ul li a{
+        font-size: 2vw;
+    }
+}

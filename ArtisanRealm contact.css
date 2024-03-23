@@ -1,0 +1,189 @@
+/* css variables */
+
+:root {
+    --bg:#15161b;
+    --main-font:"Gilda Display", serif;
+    --light-font:"Poppins", sans-serif;
+    --light-color:#d7d7d7;   
+}
+
+/* css reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body {
+    height: 100%;
+    width: 100%;    
+}
+
+body {
+    background: var(--bg);
+    color: white;
+}   
+
+nav {
+    display: flex;
+    justify-content: space-around;     
+    align-items: center;    
+    font-size: 2vw;
+    min-height: 8vh;
+    width: 100vw;
+    padding: 1vh 2vw;
+    font-family: var(--main-font);
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: white;
+    background: transparent;
+}
+
+nav p {
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 1vw;
+}
+
+nav ul li a {
+    color: var(--light-color);
+    text-decoration: none;
+    font-size: 1vw;
+    font-family: var(--light-font);    
+    letter-spacing: 0;
+    font-weight: 400;
+}
+
+#home {
+    min-height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+
+#page1 p{
+    font-size: 2vw;
+    color: white;
+    font-family: var(--light-font);
+    margin: 2vh 5vw;
+    width: 60%;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80vw;
+    height: auto;
+    margin: auto;
+}
+
+form div{width: 90%;}
+
+form h3{
+    font-size: 4vw;
+    color: white;
+    margin: 4vh 0;
+    width: 30%;
+    font-weight: 550;    
+    font-family: var(--light-font);
+    letter-spacing: 2px;   
+    text-align: leborde}
+
+input,
+textarea {
+    width: 90%;
+    height: 7vh;/* 5vh for phone */
+    margin: 2vh 0;
+    padding: 0 2vw;
+    outline: none;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid white;
+    color: white;
+    font-size: 1.5vw;
+}
+
+textarea{height: 15vh;}/* 10vh for phone */
+
+input::placeholder,
+textarea::placeholder {
+    color: #dddddd;
+}
+
+input[type="submit"] {
+    width: 30%;
+    border-radius: 20px;
+    cursor: pointer;
+    background: white;
+    color: black;
+    border: none;
+    outline: none;
+    transition: .2s;
+}
+
+#page2 {
+    height: 100%;
+    width: 100vw;
+    position: relative;
+    padding: 5vh 0;
+}
+
+#page2 p {
+    font-size: 2.2vw;
+    font-weight: 500;
+    font-family: var(--light-font);
+    width: 90%;
+    margin: 2vh 3vw;    
+    text-align: center;
+}
+
+#page2 span a{
+    color: white;
+    font-size: 5vw;
+    font-weight: 550;
+    font-family: var(--light-font);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin: 2vh 0;
+}
+
+
+@media screen and (max-width:760px){
+    input{height: 5vh;}
+    
+    textarea{height: 10vh;}
+    
+    nav {
+        font-size: 3.5vw;
+    }
+    
+    #page1 p, 
+    input,
+    textarea, 
+    #page2 p {
+        font-size: 4vw;
+        width: 90%;
+    }
+    
+    form h3 {
+        font-size: 6vw;
+    }
+    
+    nav ul li a{
+        font-size: 2vw;
+    }
+}
