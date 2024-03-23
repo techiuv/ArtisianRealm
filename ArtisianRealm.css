@@ -65,7 +65,7 @@ body {
     top: 0;
     left: 0;
     text-align: center;
-    position: relative;
+    position: fixed;
 } 
 
 #for-home ul li a{color: black;text-decoration: none;cursor: pointer;}
